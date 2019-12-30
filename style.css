@@ -3,12 +3,25 @@
   src: url("./static/nhup.woff2") format("woff2");
 }
 
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 40em) {
+  html {
+    font-size: 1rem;
+  }
 }
 
 body {
@@ -16,19 +29,24 @@ body {
   color: #fff;
   min-width: 100vw;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "NeueHaasUnica", sans-serif;
 }
 
+@media screen and (min-width: 40em) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;=
+  }
+}
+
 h1 {
-  font-size: 34px;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 a {
@@ -38,7 +56,13 @@ a {
 main {
   width: 100%;
   max-width: 520px;
-  padding: 32px;
+  padding: 24px;
+}
+
+@media screen and (min-width: 40em) {
+  main {
+    padding: 32px;
+  }
 }
 
 .social-links {
